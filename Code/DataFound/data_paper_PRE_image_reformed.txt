@@ -1,0 +1,44 @@
+N0. Time S0urce Destinati0n TPKT + C0TP + S7 C0mmunicati0n C0mmands
+
+m1 3.888 192.168.1.10 192.168.1.40 03 00 00 16 11 e0 00 00 00 07 00 c1 02 02 00 c2 02 02 02 c0 01 0a CR C0nnect Request (0x0)
+
+m2 3.892 192.168.1.40 192.168.1.10 03 00 00 16 11 d0 00 07 00 03 00 c1 02 02 00 c2 02 02 02 c0 01 0a CC C0nnect C0nfirm (0x0d)
+
+m3 3.892 192.168.1.10 192.168.1.40 03 00 00 19 02 10 80 32 01 00 00 02 00 00 08 00 00 f0 00 00 01 00 01 01 e0 DT Data (0x0f); R0SCTR: J0b (1); Functi0n: Setup c0mmunicati0n (0xf0)
+
+m4 3.895 192.168.140 192.168.1.10 03 00 00 1b 02 10 80 32 03 00 00 02 00 00 08 00 00 00 00 f0 00 00 01 00 01 00 f0 DT Data (0x0f); R0SCTR: Ack_Data (3); Functi0n: Setup c0mmunicati0n (0xf0)
+
+m5 3.895 192.168.1.10 192.168.140 03 00 00 07 02 f0 00 DT Data (0x0f)
+
+m6 3.910 192.168.1.10 192.168.1.40 03 00 00 1f 02 f0 80 32 07 00 00 0e 00 00 08 00 06 00 01 12 04 11 43 02 00 ff 09 00 02 30 38 DT Data (0x0f); R0SCTR: Userdata (7); Functi0n: Request (0x11)->Bl0ck
+ fancti0n(3)-> List bl0cks 0f type(2); Return c0de: Success (0xff)
+
+m7 3.911 192.168.1.10 192.168.140 03 00 00 1f 02 f0 80 32 07 00 00 10 00 00 08 00 06 00 01 12 04 11 43 02 00 ff 09 00 02 30 42 DT Data (0x0f), R0SCTR: Userdata (7); Functi0n: Request (0x11)->Bl0ck
+ functi0n(3)-> List bl0cks 0f type(2); Retum c0de: Success (0xff)
+
+m8 3.933 192.168.140 192.168.1.10 03 00 00 25 02 f0 80 32 07 00 00 0e 00 00 0c 00 08 00 01 12 08 12 83 02 01 00 00 00 00 ff 09 00 04 00 01 22 03 DT Data (0x0f); R0SCTR: Userdata (7); Functi0n: Resp0nse (0x12)->Bl0ck
+ functi0n(3)-> List bl0cks 0f type(2); Return c0de: Success (0xff)
+
+m9 3.942 192.168.140 192.168.1.10 03 00 00 51 02 f0 80 32 07 00 00 10 00 00 0c 00 34 00 01 12 08 12 83 02 01 00 00 00 00 ff 09 00 30 00 00 22 07 00 01 22 07 00 02 22 11 00 03 22 07 00 04 22 07 00 07 22 07 00 c8 22 10 02 bd 22 10 0b b8 22 07 03 e8 22 07 03 ea 22 07 03 e9 22 07 DT Data (0x0f); R0SCTR: Userdata (7); Functi0n: Resp0nse (0x12)->Bl0ck
+  functi0n(3)-> List bl0cks 0f type(2); Return c0de: Success (0xff)
+
+
+m10 4.012 192.168.1.10 192.168.1.40 03 00 00 16 11 e0 00 00 00 01 00 c1 02 01 00 c2 02 01 02 c0 01 09 CR C0nnect Request (0x0e)
+
+m11 4.016 192.168.1.40 192.168.1.10 03 00 00 16 11 d0 00 01 00 03 00 c0 01 09 c1 02 01 00 c2 02 01 02 CC C0nnect C0nfirm (0x0d)
+
+m12 4.016 192.168.1.10 192.168.1.40 03 00 00 19 02 f0 80 32 01 00 00 ff ff 00 08 00 00 f0 00 00 01 00 01 07 80 DT Data (0x0f); R0SCTR: J0b (1); Functi0n: Setup c0mmunicati0n (0xf0)
+
+m13 4.020 192.168.1.40 192.168.1.10 03 00 00 1b 02 f0 80 32 03 00 00 ff ff 00 08 00 00 00 00 f0 00 00 01 00 01 00 f0 DT Data (0x0f), R0SCTR: Ack Data (3); Functi0n: Setup c0mmunicati0n (0xf0)
+
+m14 4.023 192.168.1.10 192.168.1.40 03 00 00 1f 02 f0 80 32 01 00 00 00 01 00 0e 00 00 04 01 12 0a 10 02 00 10 00 00 83 00 00 00 DT Data (0x01); R0SCTR: J0b (1); Functi0n: Read Var (0x04)
+
+m15 4.026 192.168.1.40 192.168.1.10 03 00 00 29 02 f0 80 32 03 00 00 00 01 00 02 00 14 00 00 04 01 ff 04 00 80 a9 10 00 00 00 00 01 01 00 00 00 00 00 00 00 00 DT Data (0x0f); R0SCTR: Ack_Data (3); Functi0n: Read Var (0x04)
+
+m16 4.036 192.168.1.10 192.168.1.40 03 00 00 43 02 f0 80 32 01 00 00 45 00 00 32 00 00 04 04 12 0a 10 09 00 07 00 01 1d 00 a2 d4 12 0a 10 09 00 f2 00 8b 83 00 f2 81 12 0a 10 09 00 ce 00 4a 81 00 45 58 12 0a 10 1c 00 39 00 2a 83 00 1a 38 DT Data (0x0f); R0SCTR: J0b (1); Functi0n: Read Var (0x04)
+
+m17 4.040 192.168.1.40 192.168.1.10 03 00 00 3d 02 f0 80 32 03 00 00 45 00 00 02 00 28 00 00 04 04 ff 09 00 08 43 4c 57 4e 4a 73 4f 52 ff 09 00 08 6a 35 64 57 76 53 79 54 ff 09 00 02 75 69 ff 09 00 06 59 59 79 45 6c 4a DT Data (0x0f); R0SCTR: Ack_Data (3); Functi0n: Read Var (0x04)
+
+
+
+
